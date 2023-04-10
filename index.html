@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interest Calculator</title>
+    <link rel="icon" href="./images/favicon/favicon.png" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet/less" href="./css/styles.less" />
+    <script src="https://cdn.jsdelivr.net/npm/less"></script>
+  </head>
+  <body>
+    <!-- Header Section ⬇ -->
+    <header>
+      <div class="container">
+        <div class="hero">
+          <h1 class="title">Simple Interest Made Easy</h1>
+          <p class="description">
+            Today you can easily calculate for your simple interest, either the principal, rate, or time.
+          </p>
+        </div>
+        <div class="button">
+          <a href="#calculateFor" class="btn">Calculate</a>
+        </div>
+      </div>
+    </header>
+    <!-- Main Section ⬇ -->
+    <main>
+      <div class="container">
+        <div class="writeup">
+          <h4>What do you know about Simple Interest?</h4>
+          <p>
+            Simple interest is the interest charge on borrowing that's
+            calculated using an original principal amount only and an interest
+            rate that never changes. It does not involve compounding, where
+            borrowers end up paying interest on principal and interest that
+            grows over multiple payment periods.
+          </p>
+          <div id="calculateFor">
+            <label class="labelOption"
+              >Calculate For
+              <select name="" id="" class="selectOption">
+                <option value="">Simple Interest</option>
+                <option value="">Principal</option>
+                <option value="">Rate</option>
+                <option value="">Time</option>
+              </select>
+            </label>
+          </div>
+        </div>
+        <div class="main" id="main">
+          <div class="required">
+            <h4>Principal (Amount)</h4>
+            <input type="number" placeholder="amount" class="principal" />
+            <h4>Rate (Percentage)</h4>
+            <input type="number" placeholder="percentage" class="rate" />
+            <h4>Time (Duration)</h4>
+            <input type="number" placeholder="duration" class="time" />
+            <div class="check">
+              <button class="btn" id="check">Solve</button>
+            </div>
+          </div>
+          <div class="result">
+            <h4 class="show1"></h4>
+            <p class="show2"></p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Footer Section ⬇ -->
+    <footer>
+      <div class="container">
+        <div class="footer">
+          <p>Made with 🧡 in Enugu, Nigeria</p>
+          <p>
+            <a href=".">GidiCorper</a>
+            &copy;
+            <!-- The below updates the year automatically -->
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

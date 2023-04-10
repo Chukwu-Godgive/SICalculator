@@ -1,0 +1,160 @@
+// Default styles ⬇
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-image: radial-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)),
+    url("../images/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-size: 18px;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+// Reusable Components
+.btn {
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 1rem;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+input {
+  border: 1px solid orange;
+  outline: none;
+  padding: 10px;
+  margin: 8px 0 20px;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 16px;
+  color: rgb(82, 82, 82);
+}
+
+/* 
+    Section styles ⬇
+*/
+
+// Header Section ⬇
+header {
+  .hero {
+    text-align: center;
+    padding: 120px 0;
+    line-height: normal;
+  }
+  .title {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 60px;
+    box-shadow: inset 0.5px 0.5px white;
+  }
+  .description {
+    padding: 24px;
+    // color: white;
+    box-shadow: 0.5px 0.5px white;
+  }
+  .button {
+    padding: 0 0 24px;
+    text-align: center;
+    .btn {
+      .btn();
+      box-shadow: 2px 3px 8px rgba(255, 255, 255, 0.568);
+    }
+    .btn:hover {
+      background-color: rgb(31, 31, 31);
+      cursor: pointer;
+    }
+  }
+}
+
+// Main Section ⬇
+main {
+  background-color: white;
+  color: rgb(82, 82, 82);
+  .main {
+    padding: 120px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1rem;
+  }
+  .check {
+    padding: 24px 0;
+  }
+  .btn {
+    .btn();
+    border: none;
+    padding: 0.5rem;
+    box-shadow: 2px 3px 8px rgba(255, 238, 0, 0.568);
+    display: block;
+    margin: 0;
+  }
+  .btn:hover {
+    background-color: rgb(31, 31, 31);
+    cursor: pointer;
+  }
+  .required,
+  .result {
+    margin: 0 auto;
+  }
+  .resultOutput {
+    box-shadow: 0.5px 0.5px orange;
+    padding: 20px 0 5px;
+    font-weight: bold;
+  }
+}
+
+.writeup {
+  padding: 120px 0 0;
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+  line-height: 1.5;
+  h4 {
+    padding-bottom: 24px;
+  }
+}
+
+#calculateFor {
+  padding-top: 60px;
+  .labelOption {
+    text-transform: uppercase;
+    border: 1px solid orange;
+    font-weight: 600;
+    color: rgb(82, 82, 82);
+    padding: 10px;
+    margin: 8px 0 20px;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  .selectOption {
+    border: none;
+    background-color: transparent;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    outline: none;
+    color: rgb(82, 82, 82);
+  }
+}
+
+// Footer Section ⬇
+footer {
+  padding: 40px 0;
+  text-align: center;
+  a {
+    text-decoration: underline;
+    color: #551A8B;
+  }
+}
