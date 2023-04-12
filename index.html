@@ -20,13 +20,13 @@
     <script src="https://cdn.jsdelivr.net/npm/less"></script>
   </head>
   <body>
-    <!-- Header Section ⬇ -->
     <header>
       <div class="container">
         <div class="hero">
           <h1 class="title">Simple Interest Made Easy</h1>
           <p class="description">
-            Today you can easily calculate for your simple interest, either the principal, rate, or time.
+            Today you can easily calculate for your simple interest, either as
+            an assignment, project or work
           </p>
         </div>
         <div class="button">
@@ -34,7 +34,6 @@
         </div>
       </div>
     </header>
-    <!-- Main Section ⬇ -->
     <main>
       <div class="container">
         <div class="writeup">
@@ -46,38 +45,41 @@
             borrowers end up paying interest on principal and interest that
             grows over multiple payment periods.
           </p>
+          <!-- Still working on the dropdown select option that will help to display other calculation options -->
           <div id="calculateFor">
-            <label class="labelOption"
-              >Calculate For
-              <select name="" id="" class="selectOption">
-                <option value="">Simple Interest</option>
-                <option value="">Principal</option>
-                <option value="">Rate</option>
-                <option value="">Time</option>
+            <label class="labelOption">Calculate For
+              <select class="selectOption">
+                <option>Simple Interest</option>
+                <option>Principal</option>
+                <option>Rate</option>
+                <option>Time</option>
               </select>
             </label>
           </div>
         </div>
+        <!-- simple interest Dashboard -->
         <div class="main" id="main">
           <div class="required">
             <h4>Principal (Amount)</h4>
             <input type="number" placeholder="amount" class="principal" />
             <h4>Rate (Percentage)</h4>
             <input type="number" placeholder="percentage" class="rate" />
-            <h4>Time (Duration)</h4>
+            <h4>Time (Months)</h4>
             <input type="number" placeholder="duration" class="time" />
             <div class="check">
               <button class="btn" id="check">Solve</button>
             </div>
           </div>
+          <!-- The result section is mostly controlled through javascript -->
           <div class="result">
             <h4 class="show1"></h4>
-            <p class="show2"></p>
+            <div class="show2">
+              <p class="show2-1"></p>
+              <p class="show2-2"></p>
+            </div>
           </div>
         </div>
-      </div>
     </main>
-    <!-- Footer Section ⬇ -->
     <footer>
       <div class="container">
         <div class="footer">
@@ -85,7 +87,6 @@
           <p>
             <a href=".">GidiCorper</a>
             &copy;
-            <!-- The below updates the year automatically -->
             <script>
               document.write(new Date().getFullYear());
             </script>

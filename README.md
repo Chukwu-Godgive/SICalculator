@@ -4,7 +4,7 @@ Simple interest is the interest charge on borrowing that's calculated using an o
 
 It does not involve compounding, where borrowers end up paying interest on principal and interest that grows over multiple payment periods.
 
-[Visit Site]()
+[Visit Site](sicsolver.netlify.app)
 
 ### Tools Pack
 
