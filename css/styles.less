@@ -1,3 +1,6 @@
+/* Note Classes and Ids are nested based on their sections
+*/
+
 // Default styles ⬇
 * {
   padding: 0;
@@ -42,6 +45,13 @@ input {
   color: rgb(82, 82, 82);
 }
 
+// Will be applied through Javascript to Html to style our resultOutPut
+.resultOutput {
+  box-shadow: 0.5px 0.5px orange;
+  padding: 20px 0 5px;
+  font-weight: bold;
+}
+
 /* 
     Section styles ⬇
 */
@@ -56,12 +66,11 @@ header {
   .title {
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 60px;
+    font-size: 3.75em;
     box-shadow: inset 0.5px 0.5px white;
   }
   .description {
     padding: 24px;
-    // color: white;
     box-shadow: 0.5px 0.5px white;
   }
   .button {
@@ -75,42 +84,6 @@ header {
       background-color: rgb(31, 31, 31);
       cursor: pointer;
     }
-  }
-}
-
-// Main Section ⬇
-main {
-  background-color: white;
-  color: rgb(82, 82, 82);
-  .main {
-    padding: 120px 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    grid-gap: 1rem;
-  }
-  .check {
-    padding: 24px 0;
-  }
-  .btn {
-    .btn();
-    border: none;
-    padding: 0.5rem;
-    box-shadow: 2px 3px 8px rgba(255, 238, 0, 0.568);
-    display: block;
-    margin: 0;
-  }
-  .btn:hover {
-    background-color: rgb(31, 31, 31);
-    cursor: pointer;
-  }
-  .required,
-  .result {
-    margin: 0 auto;
-  }
-  .resultOutput {
-    box-shadow: 0.5px 0.5px orange;
-    padding: 20px 0 5px;
-    font-weight: bold;
   }
 }
 
@@ -145,6 +118,67 @@ main {
     font-weight: 600;
     text-transform: uppercase;
     outline: none;
+  }
+}
+
+// Main Section ⬇
+main {
+  background-color: white;
+  color: rgb(82, 82, 82);
+  // Interest, Principal, Rate, and Time Dashboard Section ⬇
+  .interest,
+  .principal,
+  .rate,
+  .time {
+    padding: 120px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1rem;
+  }
+
+  .stagePrincipal {
+    display: none;
+  }
+  .stageRate {
+    display: none;
+  }
+  .stageTime {
+    display: none;
+  }
+
+  .checkForInterest,
+  .checkForPrincipal,
+  .checkForRate,
+  .checkForTime {
+    padding: 24px 0;
+  }
+  .btnForInterest,
+  .btnForPrincipal,
+  .btnForRate,
+  .btnForTime {
+    .btn();
+    border: none;
+    padding: 0.5rem;
+    box-shadow: 2px 3px 8px rgba(255, 238, 0, 0.568);
+    display: block;
+    margin: 0;
+  }
+  .btnForInterest:hover,
+  .btnForPrincipal:hover,
+  .btnForRate:hover,
+  .btnForTime:hover {
+    background-color: rgb(31, 31, 31);
+    cursor: pointer;
+  }
+  .requiredForInterest,
+  .requiredForPrincipal,
+  .requiredForRate,
+  .requiredForTime,
+  .resultForInterest,
+  .resultForPrincipal,
+  .resultForRate,
+  .resultForTime {
+    margin: 0 auto;
   }
 }
 

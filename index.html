@@ -49,36 +49,118 @@
           <div id="calculateFor">
             <label class="labelOption">Calculate For
               <select class="selectOption">
-                <option>Simple Interest</option>
-                <option>Principal</option>
-                <option>Rate</option>
-                <option>Time</option>
+                <option value="Interest">Simple Interest</option>
+                <option value="Principal">Principal</option>
+                <option value="Rate">Rate</option>
+                <option value="Time">Time</option>
               </select>
             </label>
           </div>
         </div>
         <!-- simple interest Dashboard -->
-        <div class="main" id="main">
-          <div class="required">
-            <h4>Principal (Amount)</h4>
-            <input type="number" placeholder="amount" class="principal" />
-            <h4>Rate (Percentage)</h4>
-            <input type="number" placeholder="percentage" class="rate" />
-            <h4>Time (Months)</h4>
-            <input type="number" placeholder="duration" class="time" />
-            <div class="check">
-              <button class="btn" id="check">Solve</button>
+        <div class="dashboard stageInterest">
+          <div class="interest" id="interest">
+            <div class="requiredForInterest">
+              <h4>Principal (Amount)</h4>
+              <input type="number" placeholder="amount" class="principalForInterest" />
+              <h4>Rate (Percentage)</h4>
+              <input type="number" placeholder="percentage" class="rateForInterest" />
+              <h4>Time (Months)</h4>
+              <input type="number" placeholder="duration" class="timeForInterest" />
+              <div class="checkForInterest">
+                <button class="btnForInterest" id="checkForInterest">Solve</button>
+              </div>
             </div>
-          </div>
-          <!-- The result section is mostly controlled through javascript -->
-          <div class="result">
-            <h4 class="show1"></h4>
-            <div class="show2">
-              <p class="show2-1"></p>
-              <p class="show2-2"></p>
+            <!-- The result section is mostly controlled through javascript -->
+            <div class="resultForInterest">
+              <h4 class="show1ForInterest"></h4>
+              <div class="show2ForInterest">
+                <p class="show2-1ForInterest"></p>
+                <p class="show2-2ForInterest"></p>
+              </div>
             </div>
           </div>
         </div>
+        <!-- simple interest Dashboard End here -->
+
+        <!-- Principal Dashboard -->
+        <div class="stagePrincipal">
+          <div class="principal" id="principal">
+            <div class="requiredForPrincipal">
+              <h4>S.I (Amount)</h4>
+              <input type="number" placeholder="amount" class="interestForPrincipal" />
+              <h4>Rate (Percentage)</h4>
+              <input type="number" placeholder="percentage" class="rateForPrincipal" />
+              <h4>Time (Months)</h4>
+              <input type="number" placeholder="duration" class="timeForPrincipal" />
+              <div class="checkForPrincipal">
+                <button class="btnForPrincipal" id="checkForPrincipal">Solve</button>
+              </div>
+            </div>
+            <!-- The result section is mostly controlled through javascript -->
+            <div class="resultForPrincipal">
+              <h4 class="show1ForPrincipal"></h4>
+              <div class="show2ForPrincipal">
+                <p class="show2-1ForPrincipal"></p>
+                <p class="show2-2ForPrincipal"></p>
+              </div>
+            </div>
+          </div>
+        </div>        
+        <!-- Principal Dashboard End here -->
+
+        <!-- Rate Dashboard -->
+        <div class="dashboard stageRate">
+          <div class="rate" id="rate">
+            <div class="requiredForRate">
+              <h4>S.I (Amount)</h4>
+              <input type="number" placeholder="amount" class="interestForRate" />
+              <h4>Principal (Amount)</h4>
+              <input type="number" placeholder="amount" class="principalForRate" />
+              <h4>Time (Months)</h4>
+              <input type="number" placeholder="duration" class="timeForRate" />
+              <div class="checkForRate">
+                <button class="btnForRate" id="checkForRate">Solve</button>
+              </div>
+            </div>
+            <!-- The result section is mostly controlled through javascript -->
+            <div class="resultForRate">
+              <h4 class="show1ForRate"></h4>
+              <div class="show2ForRate">
+                <p class="show2-1ForRate"></p>
+                <p class="show2-2ForRate"></p>
+              </div>
+            </div>
+          </div>
+        </div>        
+        <!-- Rate Dashboard End here -->
+
+
+        <!-- Time Dashboard -->
+        <div class="dashboard stageTime">
+          <div class="time" id="time">
+            <div class="requiredForTime">
+              <h4>S.I (Amount)</h4>
+              <input type="number" placeholder="amount" class="interestForTime" />
+              <h4>Principal (Amount)</h4>
+              <input type="number" placeholder="amount" class="principalForTime" />
+              <h4>Rate (Percentage)</h4>
+              <input type="number" placeholder="percentage" class="rateForTime" />
+              <div class="checkForTime">
+                <button class="btnForTime" id="checkForTime">Solve</button>
+              </div>
+            </div>
+            <!-- The result section is mostly controlled through javascript -->
+            <div class="resultForTime">
+              <h4 class="show1ForTime"></h4>
+              <div class="show2ForTime">
+                <p class="show2-1ForTime"></p>
+                <p class="show2-2ForTime"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Time Dashboard End here -->
     </main>
     <footer>
       <div class="container">
